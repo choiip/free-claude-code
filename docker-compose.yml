@@ -1,0 +1,11 @@
+services:
+  fcc-server:
+    build: .
+    environment:
+      # - HOST=192.168.1.99
+      - PORT=18082
+    env_file:
+      - .env
+    network_mode: host
+    # ports:
+    #   - "18082:18082"
